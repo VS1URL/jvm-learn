@@ -1,4 +1,4 @@
-package com.jvm.learn;
+package com.gdou.jvm.learn;
 
 /**
  * 1. 对象可以在被GC时自我拯救

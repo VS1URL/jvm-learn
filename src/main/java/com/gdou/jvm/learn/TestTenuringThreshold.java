@@ -1,4 +1,4 @@
-package com.jvm.learn;
+package com.gdou.jvm.learn;
 
 /**
  * VM Options:-Xms20M -Xmx20M -Xmn10M -XX:+PrintGCDetails -XX:SurvivorRatio=8 -XX:MaxTenuringThreshold=1 -XX:+UseSerialGC

@@ -1,4 +1,4 @@
-package com.jvm.learn;
+package com.gdou.jvm.learn;
 
 public class Main {
 

@@ -1,4 +1,4 @@
-package com.jvm.learn;
+package com.gdou.jvm.learn;
 
 /**
  * Created by zwchen on 17-3-7.

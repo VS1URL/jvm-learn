@@ -1,4 +1,4 @@
-package com.jvm.learn;
+package com.gdou.jvm.learn;
 
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;
@@ -13,19 +13,18 @@ import java.lang.reflect.Method;
 public class JavaMethodAreaOOM {
 
     public static void main(String[] args){
-        while (true){
-            Enhancer enhancer=new Enhancer();
+        do {
+            Enhancer enhancer = new Enhancer();
             enhancer.setSuperclass(objOOM.class);
             enhancer.setUseCache(false);
             enhancer.setCallback(new MethodInterceptor() {
-                @Override
                 public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
                     return methodProxy.invokeSuper(o, objects);
                 }
             });
 
             enhancer.create();
-        }
+        } while (true);
     }
 
     static class objOOM{

@@ -1,4 +1,4 @@
-package com.jvm.learn;
+package com.gdou.jvm.learn;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -12,9 +12,10 @@ public class ThreadMonitor {
      */
     public static void createBusyThread(){
         Thread thread = new Thread(new Runnable() {
-            @Override
             public void run() {
-                while (true){}
+                do {
+                    System.out.println("1");
+                } while (true);
             }
         }, "testBusyThread");
         thread.start();
@@ -25,7 +26,6 @@ public class ThreadMonitor {
      */
     public static void createLockThread(final Object lock){
         Thread thread = new Thread(new Runnable() {
-            @Override
             public void run() {
                 synchronized (lock){
                     try {

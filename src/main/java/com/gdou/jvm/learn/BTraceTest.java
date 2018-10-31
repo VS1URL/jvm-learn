@@ -1,4 +1,4 @@
-package com.jvm.learn;
+package com.gdou.jvm.learn;
 
 import java.io.BufferedReader;
 import java.io.IOException;

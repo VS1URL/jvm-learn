@@ -1,4 +1,4 @@
-package com.jvm.learn;
+package com.gdou.jvm.learn;
 
 /**
  * Created by zwchen on 17-3-23.
@@ -20,7 +20,6 @@ public class SynAddRunable implements Runnable {
      *
      * @see Thread#run()
      */
-    @Override
     public void run() {
         synchronized (Integer.valueOf(a)){
             synchronized (Integer.valueOf(b)){

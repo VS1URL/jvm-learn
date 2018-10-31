@@ -1,4 +1,4 @@
-package com.jvm.learn;
+package com.gdou.jvm.learn;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,9 +14,9 @@ public class RuntimeConstantPoolOOM {
     public static void main(String[] args){
         List<String> list=new ArrayList<String>();
         int i=0;
-        while (true){
+        do {
             list.add(String.valueOf(i++).intern());
-        }
+        } while (true);
 
 //        interestingForIntern();
     }

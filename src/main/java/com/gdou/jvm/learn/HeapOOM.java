@@ -1,4 +1,4 @@
-package com.jvm.learn;
+package com.gdou.jvm.learn;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,8 +15,8 @@ public class HeapOOM {
     public static void main(String[] args){
         List<OOMObject> list=new ArrayList<OOMObject>();
 
-        while (true){
+        do {
             list.add(new OOMObject());
-        }
+        } while (true);
     }
 }
